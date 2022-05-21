@@ -1,6 +1,5 @@
-def solution(number):
-    answers = []
-    for i in range(number):
-        if (i%3==0 or i%5==0) and i<number and i>0:
-            answers.append(i)
-    return sum(answers)
+total = 0
+for num in range(1000):
+    if num % 3 == 0 or num % 5 == 0:
+        print(num)
+        total += num
